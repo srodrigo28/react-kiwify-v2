@@ -19,7 +19,11 @@ export default function Cadastrar() {
                   <small>Ou <Link to="/">entrar na sua conta existente</Link></small>
             </div>
 
-            <form className='form'>
+            <form className='form-cadastro'>
+                  <div className="div-input">
+                        <label htmlFor="">Nome</label>
+                        <input type="text" />
+                  </div>
                   <div className="div-input">
                         <label htmlFor="">E-mail</label>
                         <input type="text" />
@@ -33,8 +37,8 @@ export default function Cadastrar() {
                   <div className="div-input">
                         <label htmlFor="" className='pais-label'>País</label>
 
-                        <select>
-                              <option value="">Selecione seu país</option>
+                        <select >
+                              <option value="Selecione seu país">Selecione seu país</option>
                               <option value="Estados Unidos">Estados Unidos</option>
                               <option value="Brasil">Brasil</option>
                               <option value="Canadá">Canadá</option>
@@ -42,7 +46,7 @@ export default function Cadastrar() {
                         </select>
                   </div>
 
-                  <button className='btn-entrar'>Cadastrar</button>
+                  <button className='btn-cadastro'>Cadastrar</button>
             </form>
       </div>
   )
