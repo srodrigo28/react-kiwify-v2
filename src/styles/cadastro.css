@@ -22,8 +22,9 @@
 }
 
 .form {
-      width: 15%;
-      height: 33%;
+      width: 380px;
+      height: 300px;
+      max-width: 380px;
 
       gap: 5px;
       display: flex;

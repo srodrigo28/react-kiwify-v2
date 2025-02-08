@@ -22,8 +22,9 @@
 }
 
 .form-esqueceu {
-      width: 15%;
-      height: 15%;
+      width: 380px;
+      height: 170px;
+      max-width: 380px;
 
       gap: 5px;
       display: flex;
