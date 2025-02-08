@@ -37,7 +37,7 @@ function App() {
 
         <div className="div-input-entrar">
           <label htmlFor="">Senha</label>
-          <input type="text" />
+          <input type="password" />
         </div>
 
         <Link className='esqueceu' to='/esqueceuSenha'>Esqueceu a senha ?</Link>
