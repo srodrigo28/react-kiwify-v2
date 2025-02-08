@@ -1,6 +1,7 @@
 import './styles/App.css'
 import { ThemeOption } from './components/theme/ThemeOption'
 import kLogo from "/logo.svg"
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
 
       <div className="textos">
         <h1>Entrar na sua conta</h1>
-        <small>Ou <a href="/cadastrar">fazer cadastro</a></small>
+        <small>Ou <Link  to="/cadastrar">fazer cadastro</Link></small>
       </div>
 
       <form className='form-login-entrar'>
@@ -39,7 +40,7 @@ function App() {
           <input type="text" />
         </div>
 
-        <a className='esqueceu' href='/esqueceuSenha'>Esqueceu a senha ?</a>
+        <Link className='esqueceu' to='/esqueceuSenha'>Esqueceu a senha ?</Link>
 
         <button className='btn-entrar-login'>Entrar</button>
       </form>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './../styles/esqueceu.css'
 import { ThemeOption } from './theme/ThemeOption'
 import kLogo from "/logo.svg"
@@ -15,7 +16,7 @@ export default function Esqueceu() {
             <div className="textos">
                   <h1>Criar nova conta</h1>
 
-                  <small>Ou <a href="/">entrar na sua conta existente</a></small>
+                  <small>Ou <Link to="/">entrar na sua conta existente</Link></small>
             </div>
 
             <form className='form-esqueceu'>
