@@ -4,6 +4,12 @@ import { ThemeOption } from './theme/ThemeOption'
 import kLogo from "/logo.svg"
 
 export default function Esqueceu() {
+      function handleRedefinir( e: any){
+            e.preventDefault()
+            // Aqui você pode fazer a requisição para redefinir a senha
+            alert('Redefinição de senha enviada!')
+   
+      }
   return (
       <div className='div-esqueceu-form'>
             <div className="theme-options">
@@ -25,7 +31,7 @@ export default function Esqueceu() {
                         <input type="text" />
                   </div>
 
-                  <button className='btn-entrar'>Redefinir senha</button>
+                  <button onClick={handleRedefinir} className='btn-entrar'>Redefinir senha</button>
             </form>
       </div>
   )
