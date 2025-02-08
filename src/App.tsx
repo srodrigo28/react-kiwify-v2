@@ -15,11 +15,6 @@ function App() {
   return (
     <div className='div-login-form'>
       
-      <div className="theme-options">
-        <ThemeOption theme='dark' />
-        <ThemeOption theme='light' />
-      </div>
-      
       <img src={kLogo} alt="" />
 
       <div className="textos">
@@ -28,6 +23,11 @@ function App() {
       </div>
 
       <form className='form-login'>
+        <div className="theme-options">
+          <h3 className='theme-title'>Tema</h3>
+          <ThemeOption theme='dark' />
+          <ThemeOption theme='light' />
+        </div>
         <div className="div-input">
           <label htmlFor="">E-mail</label>
           <input type="text" />
