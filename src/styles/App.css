@@ -21,16 +21,18 @@
   text-align: center;
 }
 
-.form-login { /** ALTERADO */
-  width: 80%;
-  height: 30%;
-  max-width: 360px;
+.form-login-entrar { /** ALTERADO */
+  width: 380px;
+  height: 300px;
+  max-width: 380px;
+  padding: 30px;
 
   gap: 5px;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 
   border-radius: 8px;
 
@@ -38,27 +40,17 @@
   background-color: var(--bg-card);
   
 }
-
-.div-input {
-  width: 100%;
-
-  gap: 2px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .div-input label { /** ALTERADO */
   margin-right: 74%;
   margin-left: 8px;
 }
 
-.div-input input { /** ALTERADO */
+.div-input-entrar input { /** ALTERADO */
   outline: 0;
 
-  width: 85%;
+  width: 320px;
 
-  padding: 18px 5px;
+  padding: 10px 5px;
 
   border-radius: 4px;
 
@@ -68,20 +60,23 @@
 
 a.esqueceu { /** ALTERADO */
   margin-right: 8%;
+  width: 80%;
   background-color: transparent;
   outline: none;
   border: none;
 
   color: #646cff;
+  align-self: flex-start;
 }
 
 a.esqueceu:hover {
-  color: #535bf2;
+  color: green;
 }
 
-.btn-entrar {  /** ALTERADO */
+.btn-entrar-login {  /** ALTERADO */
   border: 0;
   outline: 0;
+  
   margin-top: 20px;
   border-radius: 4px;
   letter-spacing: 2px;
@@ -89,16 +84,33 @@ a.esqueceu:hover {
   font-weight: bold;
   font-size: 14px;
   
-  width: 85%;
-  height: 35px;
-  
   color: var(--btn-text);
   background-color: var(--btn);
+  padding: 10px;
 
   transition: .2s;
+  width: 320px;
+  padding: 10px;
 }
 
 .btn-entrar:hover {
   background-color: var(--btn-hover);
   cursor: pointer;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .form-login-entrar { /** ALTERADO */
+    width: 340px;
+    height: 300px;
+    max-width: 380px;
+    padding: 30px;
+  }
+  .div-input-entrar input { 
+    width: 280px;
+  }
+  .btn-entrar-login {  
+    width: 280px;
+  }
 }

@@ -22,25 +22,26 @@ function App() {
         <small>Ou <a href="/cadastrar">fazer cadastro</a></small>
       </div>
 
-      <form className='form-login'>
+      <form className='form-login-entrar'>
         <div className="theme-options">
           <h3 className='theme-title'>Tema</h3>
           <ThemeOption theme='dark' />
           <ThemeOption theme='light' />
         </div>
-        <div className="div-input">
+
+        <div className="div-input-entrar">
           <label htmlFor="">E-mail</label>
           <input type="text" />
         </div>
 
-        <div className="div-input">
+        <div className="div-input-entrar">
           <label htmlFor="">Senha</label>
           <input type="text" />
         </div>
 
         <a className='esqueceu' href='/esqueceuSenha'>Esqueceu a senha ?</a>
 
-        <button className='btn-entrar'>Entrar</button>
+        <button className='btn-entrar-login'>Entrar</button>
       </form>
     </div>
   )
